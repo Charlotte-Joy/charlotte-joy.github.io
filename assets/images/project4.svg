@@ -1,5 +1,5 @@
 <svg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'>
-  <rect width='100%' height='100%' fill='#071225'/>
-  <circle cx='140' cy='420' r='48' fill='#8a6eff' opacity='0.06'/>
-  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Orbitron, Inter, sans-serif' font-size='28' fill='#8a6eff'>Project 4</text>
+  <rect width='100%' height='100%' fill='#f5fbff'/>
+  <circle cx='140' cy='420' r='48' fill='#ffd6a5' opacity='0.12'/>
+  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Orbitron, Inter, sans-serif' font-size='28' fill='#0b2233'>Project 4</text>
 </svg>
