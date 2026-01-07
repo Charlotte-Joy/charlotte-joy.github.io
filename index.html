@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VoiceForge — Convert Files to Voice (Design)</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">VoiceForge</a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#upload" class="cta">Upload (Coming)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Turn files into expressive audio — powered by AI</h1>
+        <p class="lead">Upload a document, select a voice, and generate an MP3. We're building the pipeline — this is the design and UI prototype.</p>
+        <div class="hero-actions">
+          <a href="#upload" class="btn btn-primary">Try the UI</a>
+          <a href="#how" class="btn btn-ghost">Learn how it will work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Designed for creators & teams</h2>
+        <p class="section-sub">A simple, secure, and fast experience for converting text and files into natural-sounding audio.</p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Upload any file</h3>
+            <p>Support for text and document formats. Drag & drop friendly UI (placeholder).</p>
+          </article>
+
+          <article class="card">
+            <h3>Custom voices</h3>
+            <p>Create expressive outputs using curated AI voices (design only).</p>
+          </article>
+
+          <article class="card">
+            <h3>Secure & private</h3>
+            <p>Files are processed securely — you control retention and downloads.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section alt">
+      <div class="container">
+        <h2 class="section-title">How it will work</h2>
+        <ol class="steps">
+          <li><strong>Upload</strong> — Provide a text file or doc (UI placeholder)</li>
+          <li><strong>Configure</strong> — Choose voice, speed, and format</li>
+          <li><strong>Generate</strong> — Produce a downloadable MP3 (coming soon)</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Upload (UI only) -->
+    <section id="upload" class="section">
+      <div class="container upload-wrap">
+        <div class="upload-card">
+          <h2>Upload your file</h2>
+          <p class="muted">This is a mock upload form to preview the experience — no files are uploaded.</p>
+
+          <form class="upload-form" onsubmit="return false;">
+            <label class="file-drop" for="file-input">
+              <input id="file-input" type="file" disabled />
+              <div class="file-drop-inner">
+                <strong>Drag & drop a file</strong>
+                <small>or click to select — feature coming soon</small>
+              </div>
+            </label>
+
+            <div class="options">
+              <label for="voice">Voice</label>
+              <select id="voice" disabled>
+                <option>Natural Female (demo)</option>
+                <option>Neutral Male (demo)</option>
+                <option>Expressive (demo)</option>
+              </select>
+            </div>
+
+            <div class="actions">
+              <button class="btn btn-primary" disabled>Generate MP3</button>
+              <button class="btn btn-outline" onclick="showComingSoon()">See demo</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="upload-info">
+          <h3>Why VoiceForge?</h3>
+          <p>Save time by converting written content to high-quality audio — great for podcasts, accessibility, and audio notes.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Testimonials / CTA -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <h2>Get notified when we launch</h2>
+          <p>Join our early access list to try the first alpha of VoiceForge.</p>
+          <form onsubmit="signupNotify(event)">
+            <input id="email" type="email" placeholder="you@email.com" required />
+            <button class="btn btn-primary">Notify me</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> VoiceForge — Design prototype</div>
+      <div class="links"><a href="#">Privacy</a> <a href="#">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
