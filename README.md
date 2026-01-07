@@ -1,15 +1,26 @@
-# charlotte-joy.github.io
+# CharTec Industries — Personal site
 
-This repository contains the static design prototype for VoiceForge — a service that will let users upload files and generate MP3s via AI. This commit adds a modern single-page design with a large hero banner, feature cards, a mock upload UI, and a notify form (no backend functionality implemented).
+This repository contains a simple static website for **CharTec Industries** (data engineering & analytics portfolio and blog). The site is intentionally static so it can be deployed as a GitHub Pages site quickly.
 
-Files added:
-- `index.html` — main landing page and UI prototype
-- `css/styles.css` — styling and responsive layout
-- `js/main.js` — tiny client-side helpers for UI interactions
+How to run locally:
+- Open `index.html` in your browser (no build step needed).
 
-Next steps:
-1. Implement backend file upload and processing API
-2. Add secure storage & job status endpoints
-3. Integrate an AI TTS engine and MP3 generation pipeline
+Deploy to GitHub Pages:
+1. Push to `main` (or `gh-pages`) branch.
+2. Enable GitHub Pages in repository settings and choose `root` as the source.
+3. Optionally add a CNAME file for a custom domain.
 
-To preview locally, open `index.html` in your browser.
+Files of interest:
+- `index.html`, `about.html`, `blog.html`, `projects.html`, `contact.html`
+- `assets/css/styles.css` (theme & layout)
+- `assets/js/main.js` (minimal interactivity)
+- `posts/` (sample posts)
+- `assets/images/` (placeholder images — replace with screenshots)
+
+Suggested next improvements:
+- Replace placeholder images with real project screenshots
+- Add more blog posts or move to a static site generator (Jekyll/Eleventy) for easier post management
+- Hook the contact form to a form service or serverless function
+- Add a simple GitHub Actions workflow to automatically deploy on push
+
+If you'd like, I can add a deployment workflow and set up a basic Jekyll or Eleventy integration to make posting easier.

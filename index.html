@@ -3,139 +3,81 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VoiceForge — Convert Files to Voice (Design)</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>CharTec Industries — Data Engineering & Analytics</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">VoiceForge</a>
-      <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#how">How it works</a>
-        <a href="#upload" class="cta">Upload (Coming)</a>
+    <div class="container">
+      <a class="brand" href="index.html">CharTec<span> Industries</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero" id="home">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <h1>Turn files into expressive audio — powered by AI</h1>
-        <p class="lead">Upload a document, select a voice, and generate an MP3. We're building the pipeline — this is the design and UI prototype.</p>
-        <div class="hero-actions">
-          <a href="#upload" class="btn btn-primary">Try the UI</a>
-          <a href="#how" class="btn btn-ghost">Learn how it will work</a>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>CharTec Industries</h1>
+        <p class="subtitle">Data engineering & analytics for thoughtful, scalable systems.</p>
+        <p class="lead">I build ETL pipelines, design analytics platforms, and turn data into reliable insights.</p>
+        <div class="cta-row">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn btn-outline" href="blog.html">Read the Blog</a>
         </div>
       </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="section">
-      <div class="container">
-        <h2 class="section-title">Designed for creators & teams</h2>
-        <p class="section-sub">A simple, secure, and fast experience for converting text and files into natural-sounding audio.</p>
-
-        <div class="grid">
-          <article class="card">
-            <h3>Upload any file</h3>
-            <p>Support for text and document formats. Drag & drop friendly UI (placeholder).</p>
-          </article>
-
-          <article class="card">
-            <h3>Custom voices</h3>
-            <p>Create expressive outputs using curated AI voices (design only).</p>
-          </article>
-
-          <article class="card">
-            <h3>Secure & private</h3>
-            <p>Files are processed securely — you control retention and downloads.</p>
-          </article>
-        </div>
+    <section class="quick-links container">
+      <h2>Quick Links</h2>
+      <div class="grid">
+        <a class="card" href="projects.html">
+          <h3>Projects</h3>
+          <p>Explore quick previews of engineering and analytical projects.</p>
+        </a>
+        <a class="card" href="blog.html">
+          <h3>Blog</h3>
+          <p>Notes on data systems, tooling, and career lessons.</p>
+        </a>
+        <a class="card" href="about.html">
+          <h3>About</h3>
+          <p>Learn about the developer behind CharTec Industries.</p>
+        </a>
+        <a class="card" href="contact.html">
+          <h3>Contact</h3>
+          <p>Get in touch for freelance work or collaborations.</p>
+        </a>
       </div>
     </section>
 
-    <!-- How it works -->
-    <section id="how" class="section alt">
-      <div class="container">
-        <h2 class="section-title">How it will work</h2>
-        <ol class="steps">
-          <li><strong>Upload</strong> — Provide a text file or doc (UI placeholder)</li>
-          <li><strong>Configure</strong> — Choose voice, speed, and format</li>
-          <li><strong>Generate</strong> — Produce a downloadable MP3 (coming soon)</li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Upload (UI only) -->
-    <section id="upload" class="section">
-      <div class="container upload-wrap">
-        <div class="upload-card">
-          <h2>Upload your file</h2>
-          <p class="muted">This is a mock upload form to preview the experience — no files are uploaded.</p>
-
-          <form class="upload-form" onsubmit="return false;">
-            <label class="file-drop" for="file-input">
-              <input id="file-input" type="file" disabled />
-              <div class="file-drop-inner">
-                <strong>Drag & drop a file</strong>
-                <small>or click to select — feature coming soon</small>
-              </div>
-            </label>
-
-            <div class="options">
-              <label for="voice">Voice</label>
-              <select id="voice" disabled>
-                <option>Natural Female (demo)</option>
-                <option>Neutral Male (demo)</option>
-                <option>Expressive (demo)</option>
-              </select>
-            </div>
-
-            <div class="actions">
-              <button class="btn btn-primary" disabled>Generate MP3</button>
-              <button class="btn btn-outline" onclick="showComingSoon()">See demo</button>
-            </div>
-          </form>
-        </div>
-
-        <aside class="upload-info">
-          <h3>Why VoiceForge?</h3>
-          <p>Save time by converting written content to high-quality audio — great for podcasts, accessibility, and audio notes.</p>
-        </aside>
-      </div>
-    </section>
-
-    <!-- Testimonials / CTA -->
-    <section class="section cta-section">
-      <div class="container">
-        <div class="cta-card">
-          <h2>Get notified when we launch</h2>
-          <p>Join our early access list to try the first alpha of VoiceForge.</p>
-          <form onsubmit="signupNotify(event)">
-            <input id="email" type="email" placeholder="you@email.com" required />
-            <button class="btn btn-primary">Notify me</button>
-          </form>
-        </div>
+    <section class="freelance container">
+      <h2>Find me on</h2>
+      <div class="links-row">
+        <a href="#" class="pill">Upwork</a>
+        <a href="#" class="pill">Fiverr</a>
+        <a href="#" class="pill">LinkedIn</a>
+        <a href="#" class="pill">GitHub</a>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> VoiceForge — Design prototype</div>
-      <div class="links"><a href="#">Privacy</a> <a href="#">Contact</a></div>
+    <div class="container">
+      <p>© <strong>CharTec Industries</strong> — Data engineering & analytics</p>
+      <nav class="social">
+        <a href="#">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">Email</a>
+      </nav>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
